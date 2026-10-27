@@ -11,15 +11,16 @@
 
 ## 装上它
 
-插件目录已经在 `profiles/web` 的 `dependencies`、`dsh.profile.bundles` 里登记好，
-`node_modules/dsh-stealth-reader` 是指向本目录的 junction。**重启 DSH Desktop** 即可生效。
+```powershell
+dsh plugin --profile web add dsh-stealth-reader
+```
 
-重新安装（换机器 / 换 profile）：
+装完**重启 DSH Desktop**（新的前端模块只在启动时进模块图）。
+
+想从源码装（改代码即时生效）：
 
 ```powershell
-& "C:\Users\Administrator\AppData\Roaming\dsh-desktop\harness\.desktop-bin\node.cmd" `
-  "D:\Program Files (x86)\DSH\DSH Desktop\resources\app.asar\node_modules\@deepseek-ai\dsh\lib\bin.js" `
-  plugin --profile web add "link:<本目录绝对路径>"
+dsh plugin --profile web add "link:<本目录绝对路径>"
 ```
 
 卸载：
