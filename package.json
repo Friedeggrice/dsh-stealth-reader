@@ -27,6 +27,14 @@
   ],
   "license": "MIT",
   "author": "dsh-stealth-reader contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Friedeggrice/dsh-stealth-reader.git"
+  },
+  "homepage": "https://github.com/Friedeggrice/dsh-stealth-reader#readme",
+  "bugs": {
+    "url": "https://github.com/Friedeggrice/dsh-stealth-reader/issues"
+  },
   "engines": {
     "node": ">=20"
   },
