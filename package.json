@@ -1,0 +1,42 @@
+{
+  "name": "dsh-stealth-reader",
+  "version": "0.5.0",
+  "description": "底栏速记：在任意会话页面底部常驻几行文字，快捷键翻页，支持 txt 与 epub",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "reader",
+    "epub",
+    "txt",
+    "stealth"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "web",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "dsh-stealth-reader contributors",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "manifestVersion": 1
+  }
+}

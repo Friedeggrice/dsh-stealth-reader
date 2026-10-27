@@ -1,0 +1,15 @@
+# ============================================================================
+# dsh-stealth-reader —— DSH bundle patch
+# ============================================================================
+# 挂载声明。DSH 启动时按 bundle 层栈叠加各插件 patch，本文件把"隐蔽阅读器"
+# 的宿主半区插入 Web profile 的配置树。
+#
+# 安装方式：
+#   dsh plugin --profile web add dsh-stealth-reader
+# 或本地开发安装：
+#   dsh plugin --profile web add link:<本目录绝对路径>
+# ============================================================================
+
+- insert:
+    - id: dsh-stealth-reader
+      name: dsh-stealth-reader
